@@ -4,7 +4,7 @@ echo "Running" $0
 
 # Location of other zsh configuration
 ZDOTDIR=$HOME/.config/zsh
-export ZIM_HOME=$ZDOTDIR
+export ZIM_HOME=$ZDOTDIR/.zim
 
 # Host(name) standardisation
 export HOSTNAME=$(uname -n)
