@@ -17,3 +17,7 @@ isogeny \
     -d ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml.default.edn \
     -o ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml \
     --strict --verbose
+
+isogeny deploy --deploy-dir ~/.dotfiles \
+    alacritty doom dunst fish fontconfig gammastep \
+    git scripts sh sway vim wallpapers
