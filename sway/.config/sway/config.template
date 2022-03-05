@@ -67,6 +67,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 floating_modifier $mod normal
 
+bindsym $mod+c exec dunstctl close
+
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 

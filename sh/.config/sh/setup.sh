@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Running" $0
+# echo "Running" $0
 
 ## SwayWM
 isogeny \
