@@ -17,6 +17,8 @@ set $term alacritty
 
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
+workspace_layout stacking
+
 gaps inner {{ gaps.inner }}
 gaps outer {{ gaps.outer }}
 
