@@ -219,7 +219,10 @@
            "* MOVE %?")
           ("p" "Private" entry
            (file "~/org/private/refile.org")
-           "* MOVE %?")))
+           "* MOVE %?")
+          ("k" "Call" entry
+           (file+headline "~/org/client-n/calls.org" "Calls")
+           "* CALL %U\n%?")))
   ;; (add-hook 'org-capture-mode-hook 'evil-insert-state)
 
   ;; ;; Org > Cycle
@@ -238,6 +241,7 @@
           (plain-list-item . nil)))
 
   ;; Org > Log
+  (setq org-log-done 'time)
   (setq org-log-into-drawer t)
 
   ;; Org > Roam > Capture
@@ -260,7 +264,7 @@
         '((sequence
            "TODO(t)" "MOVE(m)" "WAIT(w)"
            "|"
-           "DONE(d)" "KILL(k)")))
+           "DONE(d)" "KILL(k)" "CALL(c)")))
 
   (setq org-todo-keyword-faces
         '(("TODO" . "SlateGray")
@@ -268,7 +272,8 @@
           ("WAIT" . "Firebrick")
           "|"
           ("DONE" . "ForestGreen")
-          ("KILL" . "SlateBlue")))
+          ("KILL" . "gray")
+          ("CALL" . "OrangeRed3")))
   )
 
 ;; Org > Cycle
