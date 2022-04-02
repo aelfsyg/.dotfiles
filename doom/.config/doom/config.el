@@ -219,7 +219,10 @@
            "* MOVE %?")
           ("p" "Private" entry
            (file "~/org/private/refile.org")
-           "* MOVE %?")))
+           "* MOVE %?")
+          ("k" "Call" entry
+           (file+headline "~/org/client-n/calls.org" "Calls")
+           "* CALL %U\n%?")))
   ;; (add-hook 'org-capture-mode-hook 'evil-insert-state)
 
   ;; ;; Org > Cycle
@@ -238,6 +241,7 @@
           (plain-list-item . nil)))
 
   ;; Org > Log
+  (setq org-log-done 'time)
   (setq org-log-into-drawer t)
 
   ;; Org > Roam > Capture
@@ -260,7 +264,7 @@
         '((sequence
            "TODO(t)" "MOVE(m)" "WAIT(w)"
            "|"
-           "DONE(d)" "KILL(k)")))
+           "DONE(d)" "KILL(k)" "CALL(c)")))
 
   (setq org-todo-keyword-faces
         '(("TODO" . "SlateGray")
@@ -268,7 +272,8 @@
           ("WAIT" . "Firebrick")
           "|"
           ("DONE" . "ForestGreen")
-          ("KILL" . "SlateBlue")))
+          ("KILL" . "gray")
+          ("CALL" . "OrangeRed3")))
   )
 
 ;; Org > Cycle
@@ -284,6 +289,8 @@
   (add-to-list 'org-src-lang-modes '("plantuml" . plantuml)))
 
 ;; Projectile
+(setq projectile-enable-caching nil)
+(setq projectile-find-dir-includes-top-level t)
 (setq projectile-project-search-path '("~/src/" "~/ext/" "~/org/"))
 
 ;; Read-time
@@ -298,7 +305,7 @@
 
 ;; Vimrc
 (require 'vimrc-mode)
-(add-to-list 'auto-mode-alist '("\\.vim\\(rc\\)?\\'" . vimrc-mode)
+(add-to-list 'auto-mode-alist '("\\.vim\\(rc\\)?\\'" . vimrc-mode))
 
 ;; Visual-line-mode
 ;; Make movement keys work like they should
@@ -309,4 +316,4 @@
 ;; (setq-default evil-cross-lines t)
 
 ;; Word wrap
-(+global-word-wrap-mode +1))
+;; (+global-word-wrap-mode +1)
