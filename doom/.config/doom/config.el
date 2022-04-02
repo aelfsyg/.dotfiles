@@ -289,6 +289,8 @@
   (add-to-list 'org-src-lang-modes '("plantuml" . plantuml)))
 
 ;; Projectile
+(setq projectile-enable-caching nil)
+(setq projectile-find-dir-includes-top-level t)
 (setq projectile-project-search-path '("~/src/" "~/ext/" "~/org/"))
 
 ;; Read-time
