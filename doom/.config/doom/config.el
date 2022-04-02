@@ -303,7 +303,7 @@
 
 ;; Vimrc
 (require 'vimrc-mode)
-(add-to-list 'auto-mode-alist '("\\.vim\\(rc\\)?\\'" . vimrc-mode)
+(add-to-list 'auto-mode-alist '("\\.vim\\(rc\\)?\\'" . vimrc-mode))
 
 ;; Visual-line-mode
 ;; Make movement keys work like they should
@@ -314,4 +314,4 @@
 ;; (setq-default evil-cross-lines t)
 
 ;; Word wrap
-(+global-word-wrap-mode +1))
+;; (+global-word-wrap-mode +1)
