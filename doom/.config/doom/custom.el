@@ -24,7 +24,9 @@
  '(rustic-ansi-faces
    ["#1e1e1e" "#D16969" "#579C4C" "#D7BA7D" "#339CDB" "#C586C0" "#85DDFF" "#d4d4d4"])
  '(safe-local-variable-values
-   '((cider-default-cljs-repl . shadow)
+   '((cider-ns-refresh-after-fn . "integrant.repl/resume")
+     (cider-ns-refresh-before-fn . "integrant.repl/suspend")
+     (cider-default-cljs-repl . shadow)
      (cider-shadow-cljs-default-options . "app")))
  '(transient-default-level 5)
  '(uniquify-buffer-name-style nil nil (uniquify))
