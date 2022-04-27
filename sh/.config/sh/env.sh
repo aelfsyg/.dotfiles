@@ -14,6 +14,7 @@ export HOST=$(uname -n)
 export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:$HOME/.config/emacs/bin
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
 export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
 
