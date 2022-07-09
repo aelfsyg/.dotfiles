@@ -55,6 +55,9 @@
 ;; Centred cursor mode
 (package! centered-cursor-mode)
 
+;; helm-dash
+(package! helm-dash)
+
 ;; Nov.el
 (package! nov)
 
