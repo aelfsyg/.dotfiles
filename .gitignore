@@ -5,3 +5,9 @@ alacritty/.config/alacritty/alacritty.yml
 dunst/.config/dunst/dunstrc
 .clj-kondo
 .lsp
+.zcompcache
+.zcompdump
+.zcompdump.zwc
+.zhistory
+.zim
+*.zwc
