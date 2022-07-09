@@ -106,6 +106,19 @@
 ;; Java
 (setq meghanada-auto-start nil)
 
+;; Latex
+(after! org
+  (setq org-startup-with-latex-preview t)
+  (setq org-latex-create-formula-image-program 'dvisvgm)
+  (setq org-format-latex-options
+        '(:foreground default
+          :background default
+          :scale 0.5
+          :html-foreground "Black"
+          :html-background "Transparent"
+          :html-scale 1.0
+          :matchers ("begin" "$1" "$" "$$" "\\(" "\\["))))
+
 ;; Lispyville
 (map! :map clojure-mode-map
       "C-h" #'lispyville-backward-sexp
