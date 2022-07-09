@@ -317,6 +317,9 @@
 ;; Uniquify
 (toggle-uniquify-buffer-names t)
 
+;; Yasnippet
+(map! "M-'" #'yas/expand)
+
 ;; Vimrc
 (require 'vimrc-mode)
 (add-to-list 'auto-mode-alist '("\\.vim\\(rc\\)?\\'" . vimrc-mode))
