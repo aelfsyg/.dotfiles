@@ -174,6 +174,7 @@ bindsym $mod+space focus mode_toggle
 
 # Move focus to the parent container
 bindsym $mod+a focus parent
+bindsym $mod+Shift+a focus child
 #
 # Scratchpad:
 #
@@ -279,7 +280,8 @@ include ~/.config/sway/config.$hostname
 
 exec wl-paste -t text --watch clipman store --no-persist
 
-exec /usr/bin/python /home/ae/.config/sway/contrib/inactive-windows-transparency.py --ignore 'firefox'
+exec /usr/bin/python /home/ae/.config/sway/contrib/window-opacity.py --ignore firefox -a 0.9 -i 0.8
+# /home/ae/.config/sway/contrib/inactive-windows-transparency.py --ignore 'firefox'
 exec batsignal -b
 exec gammastep
 

@@ -15,7 +15,7 @@
 
 (defun fetch-setting (setting)
   (cdr (assoc setting
-              (cdr (assoc system-name settings)))))
+              (cdr (assoc (system-name) settings)))))
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
@@ -47,7 +47,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-tomorrow-night)
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-nord)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -105,6 +105,19 @@
 
 ;; Java
 (setq meghanada-auto-start nil)
+
+;; Latex
+(after! org
+  (setq org-startup-with-latex-preview t)
+  (setq org-latex-create-formula-image-program 'dvisvgm)
+  (setq org-format-latex-options
+        '(:foreground default
+          :background default
+          :scale 0.5
+          :html-foreground "Black"
+          :html-background "Transparent"
+          :html-scale 1.0
+          :matchers ("begin" "$1" "$" "$$" "\\(" "\\["))))
 
 ;; Lispyville
 (map! :map clojure-mode-map
@@ -303,6 +316,9 @@
 
 ;; Uniquify
 (toggle-uniquify-buffer-names t)
+
+;; Yasnippet
+(map! "M-'" #'yas/expand)
 
 ;; Vimrc
 (require 'vimrc-mode)
