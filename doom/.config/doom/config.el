@@ -79,6 +79,9 @@
 (after! org
   (require 'bang))
 
+;; Bicep
+(require 'bicep-mode)
+
 ;; Browser
 (setq browse-url-browser-function 'browse-url-firefox
       browse-url-generic-program "firefox")
