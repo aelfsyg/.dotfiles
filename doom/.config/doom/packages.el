@@ -52,6 +52,9 @@
 ;; Bang.el
 (package! bang :recipe (:host github :repo "aelfsyg/bang.el"))
 
+;; Bicep
+(package! bicep-mode :recipe (:host github :repo "christiaan-janssen/bicep-mode"))
+
 ;; Centred cursor mode
 (package! centered-cursor-mode)
 
