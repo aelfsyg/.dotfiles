@@ -8,6 +8,8 @@
                      (var-font-size . 28)))
         ("luna" . ((mono-font-size . 20)
                      (var-font-size . 28)))
+        ("mars" . ((mono-font-size . 12)
+                     (var-font-size . 16)))
         ("europa" . ((mono-font-size . 18)
                      (var-font-size . 24)))
         ("ceres" . ((mono-font-size . 10)
