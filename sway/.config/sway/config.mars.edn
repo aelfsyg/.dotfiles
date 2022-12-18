@@ -1,4 +1,5 @@
 {:font {:family "FiraCode" :size 8}
  :gaps {:inner 20 :outer 0}
  :kbs [{:identifier "type:keyboard" :layout "gb"}]
- :cursor {:size 40}}
+ :cursor {:size 40}
+ :no-opacity true}
