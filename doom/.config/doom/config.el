@@ -8,8 +8,8 @@
                      (var-font-size . 28)))
         ("luna" . ((mono-font-size . 20)
                      (var-font-size . 28)))
-        ("mars" . ((mono-font-size . 12)
-                     (var-font-size . 16)))
+        ("mars" . ((mono-font-size . 10)
+                     (var-font-size . 12)))
         ("europa" . ((mono-font-size . 18)
                      (var-font-size . 24)))
         ("ceres" . ((mono-font-size . 10)
@@ -94,6 +94,16 @@
 
 ;; Centered mode
 (global-centered-cursor-mode t)
+
+;; Copilot
+(use-package! copilot
+  :hook (prog-mode . copilot-mode)
+  :bind (("C-TAB" . 'copilot-accept-completion-by-word)
+         ("C-<tab>" . 'copilot-accept-completion-by-word)
+         ("<right>" . 'copilot-accept-completion-by-word)
+         :map copilot-completion-map
+         ("<tab>" . 'copilot-accept-completion)
+         ("TAB" . 'copilot-accept-completion)))
 
 ;; Dired
 (setq dired-listing-switches "-aBGh --group-directories-first")

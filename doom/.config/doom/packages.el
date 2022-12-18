@@ -58,6 +58,10 @@
 ;; Centred cursor mode
 (package! centered-cursor-mode)
 
+;; Copilot
+(package! copilot
+  :recipe (:host github :repo "zerolfx/copilot.el" :files ("*.el" "dist")))
+
 ;; helm-dash
 (package! helm-dash)
 
