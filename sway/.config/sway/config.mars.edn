@@ -2,4 +2,4 @@
  :gaps {:inner 20 :outer 0}
  :kbs [{:identifier "type:keyboard" :layout "gb"}]
  :cursor {:size 40}
- :no-opacity true}
+ :opacity false}

@@ -280,8 +280,11 @@ include ~/.config/sway/config.$hostname
 
 exec wl-paste -t text --watch clipman store --no-persist
 
-{% if no-opacity %}# {% endif % }exec /usr/bin/python /home/ae/.config/sway/contrib/window-opacity.py --ignore firefox -a 0.9 -i 0.8
-# /home/ae/.config/sway/contrib/inactive-windows-transparency.py --ignore 'firefox'
+{% if opacity %}
+exec /usr/bin/python /home/ae/.config/sway/contrib/window-opacity.py --ignore firefox -a 0.9 -i 0.8
+# exec /home/ae/.config/sway/contrib/inactive-windows-transparency.py --ignore 'firefox'
+{% endif %}
+
 exec batsignal -b
 exec gammastep
 

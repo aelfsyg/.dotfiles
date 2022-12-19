@@ -4,4 +4,5 @@
        {:identifier "1241:321:USB_Keyboard" :layout "gb"}
        {:identifier "12951:6505:ZSA_Moonlander_Mark_I" :layout "gb"}
        {:identifier "12951:6505:ZSA_Moonlander_Mark_I_Keyboard" :layout "gb"}]
- :cursor {:size 20}}
+ :cursor {:size 20}
+ :opacity true}
