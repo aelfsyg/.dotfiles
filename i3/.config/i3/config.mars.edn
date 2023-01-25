@@ -1,0 +1,3 @@
+{:font {:family "Fira Code" :size 8}
+ :gaps {:inner 20 :outer 0}
+ :opacity true}

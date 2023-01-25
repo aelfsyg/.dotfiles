@@ -8,6 +8,8 @@
                      (var-font-size . 28)))
         ("luna" . ((mono-font-size . 20)
                      (var-font-size . 28)))
+        ("mars" . ((mono-font-size . 18)
+                     (var-font-size . 20)))
         ("europa" . ((mono-font-size . 18)
                      (var-font-size . 24)))
         ("ceres" . ((mono-font-size . 10)
@@ -98,6 +100,7 @@
   :hook (prog-mode . copilot-mode)
   :bind (("C-TAB" . 'copilot-accept-completion-by-word)
          ("C-<tab>" . 'copilot-accept-completion-by-word)
+         ("<right>" . 'copilot-accept-completion-by-word)
          :map copilot-completion-map
          ("<tab>" . 'copilot-accept-completion)
          ("TAB" . 'copilot-accept-completion)))
