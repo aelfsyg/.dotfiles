@@ -2,4 +2,5 @@
 
 * {
     font-size: 20px !important;
+    --tab-min-height: 25px !important;
 }
