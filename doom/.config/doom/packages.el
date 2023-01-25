@@ -84,5 +84,8 @@
 ;; Solaire
 (package! solaire-mode :disable t)
 
+;; Svelte
+(package! svelte-mode :recipe (:host github :repo "leafOfTree/svelte-mode"))
+
 ;; Vimrc
 (package! vimrc-mode)

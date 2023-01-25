@@ -115,6 +115,9 @@
 (add-hook! 'elfeed-search-mode-hook 'elfeed-update)
 (setq elfeed-goodies/feed-source-column-width 24)
 
+;; Helm
+(setq helm-case-fold-search t)
+
 ;; Input mode
 (add-hook 'text-mode-hook (lambda () (set-input-method 'TeX)))
 
@@ -249,6 +252,9 @@
           ("p" "Private" entry
            (file "~/org/private/refile.org")
            "* MOVE %?")
+          ("s" "Standup" entry
+           (file+olp "~/org/client-x/tickets.org" "Diary")
+           "** %u\n*** Tasks\n*** Standup\n**** Yesterday\n%?\n**** Today")
           ("k" "Call" entry
            (file+headline "~/org/client-n/calls.org" "Calls")
            "* CALL %U\n%?")))
@@ -291,7 +297,7 @@
   ;; Org > Todo
   (setq org-todo-keywords
         '((sequence
-           "TODO(t)" "MOVE(m)" "WAIT(w)"
+           "TODO(t)" "INIT(i)" "MOVE(m)" "WAIT(w)"
            "|"
            "DONE(d)" "KILL(k)" "CALL(c)")))
 
@@ -328,6 +334,9 @@
 
 ;; Spelling
 (setq ispell-dictionary "british-ise-w_accents")
+
+;; Svelte
+(require 'svelte-mode)
 
 ;; Uniquify
 (toggle-uniquify-buffer-names t)
