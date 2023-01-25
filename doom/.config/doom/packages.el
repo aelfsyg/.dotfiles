@@ -58,6 +58,10 @@
 ;; Centred cursor mode
 (package! centered-cursor-mode)
 
+;; Copilot
+(package! copilot
+  :recipe (:host github :repo "zerolfx/copilot.el" :files ("*.el" "dist")))
+
 ;; helm-dash
 (package! helm-dash)
 
@@ -79,6 +83,9 @@
 
 ;; Solaire
 (package! solaire-mode :disable t)
+
+;; Svelte
+(package! svelte-mode :recipe (:host github :repo "leafOfTree/svelte-mode"))
 
 ;; Vimrc
 (package! vimrc-mode)
