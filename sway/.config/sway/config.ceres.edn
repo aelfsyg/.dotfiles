@@ -2,6 +2,9 @@
  :gaps {:inner 10 :outer 0}
  :kbs [{:identifier "type:keyboard" :layout "us"}
        {:identifier "1241:321:USB_Keyboard" :layout "gb"}
-       {:identifier "12951:6505:ZSA_Moonlander_Mark_I" :layout "gb"}
-       {:identifier "12951:6505:ZSA_Moonlander_Mark_I_Keyboard" :layout "gb"}]
+       {:identifier "12951:6505:ZSA_Technology_Labs_Moonlander_Mark_I" :layout "gb"}
+       {:identifier "12951:6505:ZSA_Technology_Labs_Moonlander_Mark_I_Keyboard" :layout "gb"}
+       {:identifier "12951:6505:ZSA_Technology_Labs_Moonlander_Mark_I_System_Control" :layout "gb"}
+       {:identifier "12951:6505:ZSA_Technology_Labs_Moonlander_Mark_I_Consumer_Control" :layout "gb"}]
+ :outputs []
  :cursor {:size 20}}
