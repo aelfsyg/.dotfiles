@@ -18,6 +18,7 @@ export PATH=$PATH:$HOME/.local/bin
 export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
 
+export TERMINAL=alacritty
 export GDK_SCALE=1 # must be an integer
 export GDK_DPI_SCALE=1
 export XCURSOR_SIZE=20
