@@ -3,7 +3,6 @@
 # http://i3wm.org/docs/userguide.html
 
 set $mod Mod4
-font pango:Fira Code 10
 font pango:{{ font.family }} {{ font.size }}
 floating_modifier $mod
 

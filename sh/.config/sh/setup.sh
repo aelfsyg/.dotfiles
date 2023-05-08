@@ -3,29 +3,32 @@
 # echo "Running" $0
 
 ## SwayWM
+SWAY=~/.dotfiles/sway/.config/sway
 isogeny \
-    -t ~/.dotfiles/sway/.config/sway/config.template \
-    -c ~/.dotfiles/sway/.config/sway/config.$(uname -n).edn \
-    -d ~/.dotfiles/sway/.config/sway/config.default.edn \
-    -o ~/.dotfiles/sway/.config/sway/config \
+    -t $SWAY/config.template \
+    -c $SWAY/config.$(uname -n).edn \
+    -d $SWAY/config.default.edn \
+    -o $SWAY/config \
     --strict --verbose
 
 ## i3wm
+I3=~/.dotfiles/i3/.config/i3
 isogeny \
-    -t ~/.dotfiles/i3/.config/i3/config.template \
-    -c ~/.dotfiles/i3/.config/i3/config.$(uname -n).edn \
-    -d ~/.dotfiles/i3/.config/i3/config.default.edn \
-    -o ~/.dotfiles/i3/.config/i3/config \
+    -t $I3/config.template \
+    -c $I3/config.$(uname -n).edn \
+    -d $I3/config.default.edn \
+    -o $I3/config \
     --strict --verbose
 
 ## Alacritty
+ALACRITTY=~/.dotfiles/alacritty/.config/alacritty
 isogeny \
-    -t ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml.template \
-    -c ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml.$(uname -n).edn \
-    -d ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml.default.edn \
-    -o ~/.dotfiles/alacritty/.config/alacritty/alacritty.yml \
+    -t $ALACRITTY/alacritty.yml.template \
+    -c $ALACRITTY/alacritty.yml.$(uname -n).edn \
+    -d $ALACRITTY/alacritty.yml.default.edn \
+    -o $ALACRITTY/alacritty.yml \
     --strict --verbose
 
 isogeny deploy --deploy-dir ~/.dotfiles \
     alacritty doom dunst fish fontconfig gammastep \
-    git scripts sh sway vim wallpapers
+    git i3 picom scripts sh sway vim wallpapers

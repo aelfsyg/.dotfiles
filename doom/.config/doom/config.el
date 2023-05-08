@@ -12,8 +12,8 @@
                      (var-font-size . 20)))
         ("europa" . ((mono-font-size . 18)
                      (var-font-size . 24)))
-        ("ceres" . ((mono-font-size . 10)
-                     (var-font-size . 12)))))
+        ("ceres" . ((mono-font-size . 16)
+                     (var-font-size . 18)))))
 
 (defun fetch-setting (setting)
   (cdr (assoc setting
